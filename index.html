@@ -33,7 +33,7 @@ document.getElementById("share").onclick = () => {
       };
 
       const res = await fetch(
-        `${SUPABASE_URL}/rest/v1/locations`,
+        `${SUPABASE_URL}/rest/v1/entries`,
         {
           method: "POST",
           headers: {
