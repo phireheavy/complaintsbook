@@ -23,6 +23,13 @@ const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 document.getElementById("share").onclick = () => {
 
   navigator.geolocation.getCurrentPosition(
+      success,
+  error,
+  {
+    enableHighAccuracy: true,
+    timeout: 10000,
+    maximumAge: 0
+  }
 
     async (position) => {
 
