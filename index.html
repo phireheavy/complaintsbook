@@ -57,9 +57,11 @@ document.getElementById("share").onclick = () => {
 
       } else {
 
-        document.getElementById("result").textContent =
-          "Failed to save location.";
-
+document.getElementById("result").innerHTML = `
+  Status: ${res.status}<br>
+  Response:<br>
+  <pre>${text}</pre>
+`;
       }
 
     },
